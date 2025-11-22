@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* hide checkbox */
+    #toggle {
+        display: none;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.4s;
+    }
+
+    /* When clicked = checkbox checked, so change color */
+    #toggle:checked + .box {
+        background: lightgreen;
+    }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="toggle">
+<label for="toggle" class="box">Click Me</label>
+
+</body>
+</html>
